@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.vshpynta"})
-@Import(SwaggerConfiguration.class)
+@Import(SpringfoxSwaggerConfiguration.class)
 public class SpringBootSwaggerSampleApplication {
 
 	public static void main(String[] args) {

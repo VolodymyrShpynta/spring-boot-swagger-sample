@@ -6,11 +6,10 @@ import org.springframework.web.bind.annotation.RestController;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @RestController
-public class HelloController {
+public class NotDocumentedHelloController {
 
     @RequestMapping(value = "/", method = GET)
-    public String index() {
-        return "Greetings from Spring Boot!";
+    public String notDocumentedIndex() {
+        return "This endpoint SHOULD NOT BE available in Swagger docs";
     }
-
 }
